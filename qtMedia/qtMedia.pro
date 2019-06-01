@@ -7,7 +7,7 @@
 QT       += core gui
 QT += multimedia
 QT += multimediawidgets
-
+QT += printsupport
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = qtMedia
@@ -26,16 +26,31 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp \
     qmyvideowidget.cpp \
-    drawdlg.cpp
+    drawdlg.cpp \
+    drawwidget.cpp \
+    center.cpp \
+    vediodlg.cpp \
+    fileeidtdlg.cpp \
+    clockwidget.cpp \
+    clockdlg.cpp
 
-HEADERS  += mainwindow.h \
+HEADERS  += \
     qmyvideowidget.h \
-    drawdlg.h
+    drawdlg.h \
+    drawwidget.h \
+    center.h \
+    vediodlg.h \
+    fileeidtdlg.h \
+    clockwidget.h \
+    clockdlg.h
 
-FORMS    += mainwindow.ui \
-    drawdlg.ui
+FORMS    += \
+    center.ui \
+    vediodlg.ui \
+    fileeidtdlg.ui \
+    drawdlg.ui \
+    clockdlg.ui
 
 RESOURCES += \
     res.qrc \

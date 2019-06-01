@@ -14,6 +14,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QComboBox>
+#include <QtWidgets/QCommandLinkButton>
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
@@ -51,23 +52,24 @@ public:
     QToolButton *btnFile;
     QPushButton *btnAdd;
     QPushButton *btnRemove;
+    QCommandLinkButton *commandLinkButton;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(880, 469);
+        MainWindow->resize(880, 507);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         groupBox = new QGroupBox(centralWidget);
         groupBox->setObjectName(QStringLiteral("groupBox"));
-        groupBox->setGeometry(QRect(0, 20, 881, 441));
+        groupBox->setGeometry(QRect(0, 50, 881, 441));
         listWidgetFiles = new QListWidget(groupBox);
         listWidgetFiles->setObjectName(QStringLiteral("listWidgetFiles"));
         listWidgetFiles->setGeometry(QRect(10, 40, 211, 391));
         videoWidget = new QmyVideoWidget(groupBox);
         videoWidget->setObjectName(QStringLiteral("videoWidget"));
-        videoWidget->setGeometry(QRect(230, 40, 641, 311));
+        videoWidget->setGeometry(QRect(0, 0, 100, 30));
         widget = new QWidget(groupBox);
         widget->setObjectName(QStringLiteral("widget"));
         widget->setGeometry(QRect(230, 360, 641, 31));
@@ -148,9 +150,13 @@ public:
         QIcon icon8;
         icon8.addFile(QStringLiteral(":/images/images/318.bmp"), QSize(), QIcon::Normal, QIcon::Off);
         btnRemove->setIcon(icon8);
+        commandLinkButton = new QCommandLinkButton(centralWidget);
+        commandLinkButton->setObjectName(QStringLiteral("commandLinkButton"));
+        commandLinkButton->setGeometry(QRect(20, 0, 187, 41));
         MainWindow->setCentralWidget(centralWidget);
 
         retranslateUi(MainWindow);
+        QObject::connect(commandLinkButton, SIGNAL(clicked()), MainWindow, SLOT(close()));
 
         QMetaObject::connectSlotsByName(MainWindow);
     } // setupUi
@@ -171,6 +177,7 @@ public:
         btnFile->setText(QApplication::translate("MainWindow", "...", Q_NULLPTR));
         btnAdd->setText(QString());
         btnRemove->setText(QString());
+        commandLinkButton->setText(QApplication::translate("MainWindow", "\350\277\224\345\233\236", Q_NULLPTR));
     } // retranslateUi
 
 };

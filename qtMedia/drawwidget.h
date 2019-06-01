@@ -11,6 +11,8 @@
 #include <QPoint>
 #include <QPainter>
 #include <QPalette>
+#include <QStack>
+#include <QFile>
 class DrawWidget : public QWidget
 {
     Q_OBJECT
@@ -32,8 +34,10 @@ public slots:
     void setColor(QColor);
     void clear();
     void setShape(Shape);
+    void undo();
 private:
     QPixmap *pix;
+    QPixmap *undoPix;
     QPoint startPos;
     QPoint endPos;
     int style;
@@ -41,6 +45,8 @@ private:
     Shape shape;
     QColor color;//前景色
     bool clearFlag;
+    QStack<QString> pixStack;
+    void copySrc();
 };
 
 #endif // DRAWWIDGET_H

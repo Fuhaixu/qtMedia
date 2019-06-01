@@ -1,18 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>FileEidtDlg</class>
- <widget name="FileEidtDlg" class="QDialog">
+ <widget class="QDialog" name="FileEidtDlg">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>692</width>
+    <height>501</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>671</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>文本编辑器</string>
+   </property>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>651</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <widget class="QPushButton" name="btnNew">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>33</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>新建</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="res.qrc">
+       <normaloff>:/images/images/new.png</normaloff>:/images/images/new.png</iconset>
+     </property>
+     <property name="shortcut">
+      <string>Ctrl+N</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnOpen">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>0</y>
+       <width>33</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>打开</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="res.qrc">
+       <normaloff>:/images/images/001.GIF</normaloff>:/images/images/001.GIF</iconset>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnSave">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>0</y>
+       <width>33</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>保存</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="res.qrc">
+       <normaloff>:/images/images/rotate90.png</normaloff>:/images/images/rotate90.png</iconset>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnPrint">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>0</y>
+       <width>33</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>打印</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="res.qrc">
+       <normaloff>:/images/images/print.png</normaloff>:/images/images/print.png</iconset>
+     </property>
+    </widget>
+    <widget class="Line" name="line">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>0</y>
+       <width>31</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnUndo">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>0</y>
+       <width>33</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>撤回(undo)</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="res.qrc">
+       <normaloff>:/images/images/undo.png</normaloff>:/images/images/undo.png</iconset>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnRedo">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>0</y>
+       <width>33</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>恢复(redo)</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="res.qrc">
+       <normaloff>:/images/images/redo.png</normaloff>:/images/images/redo.png</iconset>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnCut">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>0</y>
+       <width>33</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>剪切</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="res.qrc">
+       <normaloff>:/images/images/cut.png</normaloff>:/images/images/cut.png</iconset>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnPaste">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>0</y>
+       <width>33</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>粘贴</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="res.qrc">
+       <normaloff>:/images/images/paste.png</normaloff>:/images/images/paste.png</iconset>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnFind">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>0</y>
+       <width>33</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>查找</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="res.qrc">
+       <normaloff>:/images/images/find.png</normaloff>:/images/images/find.png</iconset>
+     </property>
+    </widget>
+    <widget class="Line" name="line_2">
+     <property name="geometry">
+      <rect>
+       <x>430</x>
+       <y>0</y>
+       <width>3</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnCopy">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>0</y>
+       <width>33</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>复制</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="res.qrc">
+       <normaloff>:/images/images/copy.png</normaloff>:/images/images/copy.png</iconset>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPlainTextEdit" name="mainEditor">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>60</y>
+      <width>651</width>
+      <height>331</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QCommandLinkButton" name="btnBack">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>187</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
  <connections/>
 </ui>

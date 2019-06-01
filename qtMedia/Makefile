@@ -196,6 +196,7 @@ Makefile: qtMedia.pro D:/software/Qt/qt5.8/5.8/mingw53_32/mkspecs/win32-g++/qmak
 		D:/software/Qt/qt5.8/5.8/mingw53_32/mkspecs/features/qt_config.prf \
 		D:/software/Qt/qt5.8/5.8/mingw53_32/mkspecs/win32-g++/qmake.conf \
 		D:/software/Qt/qt5.8/5.8/mingw53_32/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		D:/software/Qt/qt5.8/5.8/mingw53_32/mkspecs/features/exclusive_builds.prf \
 		D:/software/Qt/qt5.8/5.8/mingw53_32/mkspecs/features/toolchain.prf \
 		D:/software/Qt/qt5.8/5.8/mingw53_32/mkspecs/features/default_pre.prf \
@@ -223,6 +224,7 @@ Makefile: qtMedia.pro D:/software/Qt/qt5.8/5.8/mingw53_32/mkspecs/win32-g++/qmak
 		D:/software/Qt/qt5.8/5.8/mingw53_32/lib/qtmaind.prl \
 		D:/software/Qt/qt5.8/5.8/mingw53_32/lib/Qt5MultimediaWidgets.prl \
 		D:/software/Qt/qt5.8/5.8/mingw53_32/lib/Qt5Multimedia.prl \
+		D:/software/Qt/qt5.8/5.8/mingw53_32/lib/Qt5PrintSupport.prl \
 		D:/software/Qt/qt5.8/5.8/mingw53_32/lib/Qt5Widgets.prl \
 		D:/software/Qt/qt5.8/5.8/mingw53_32/lib/Qt5Gui.prl \
 		D:/software/Qt/qt5.8/5.8/mingw53_32/lib/Qt5Network.prl \
@@ -365,6 +367,7 @@ D:/software/Qt/qt5.8/5.8/mingw53_32/mkspecs/features/qt_functions.prf:
 D:/software/Qt/qt5.8/5.8/mingw53_32/mkspecs/features/qt_config.prf:
 D:/software/Qt/qt5.8/5.8/mingw53_32/mkspecs/win32-g++/qmake.conf:
 D:/software/Qt/qt5.8/5.8/mingw53_32/mkspecs/features/spec_post.prf:
+.qmake.stash:
 D:/software/Qt/qt5.8/5.8/mingw53_32/mkspecs/features/exclusive_builds.prf:
 D:/software/Qt/qt5.8/5.8/mingw53_32/mkspecs/features/toolchain.prf:
 D:/software/Qt/qt5.8/5.8/mingw53_32/mkspecs/features/default_pre.prf:
@@ -392,6 +395,7 @@ qtMedia.pro:
 D:/software/Qt/qt5.8/5.8/mingw53_32/lib/qtmaind.prl:
 D:/software/Qt/qt5.8/5.8/mingw53_32/lib/Qt5MultimediaWidgets.prl:
 D:/software/Qt/qt5.8/5.8/mingw53_32/lib/Qt5Multimedia.prl:
+D:/software/Qt/qt5.8/5.8/mingw53_32/lib/Qt5PrintSupport.prl:
 D:/software/Qt/qt5.8/5.8/mingw53_32/lib/Qt5Widgets.prl:
 D:/software/Qt/qt5.8/5.8/mingw53_32/lib/Qt5Gui.prl:
 D:/software/Qt/qt5.8/5.8/mingw53_32/lib/Qt5Network.prl:

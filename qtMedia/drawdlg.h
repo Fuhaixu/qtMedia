@@ -2,7 +2,8 @@
 #define DRAWDLG_H
 
 #include <QDialog>
-
+#include <QColorDialog>
+#include"drawwidget.h"
 namespace Ui {
 class DrawDlg;
 }
@@ -17,6 +18,12 @@ public:
 
 private:
     Ui::DrawDlg *ui;
+public slots:
+    void SlotStyle();
+    void SlotColor();
+    void SlotShape(int);
+private slots:
+    void on_commandLinkButton_clicked();
 };
 
 #endif // DRAWDLG_H
