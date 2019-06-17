@@ -3,7 +3,7 @@
 
 #include <QDialog>
 #include <QColorDialog>
-#include"drawwidget.h"
+#include "drawwidget.h"
 namespace Ui {
 class DrawDlg;
 }

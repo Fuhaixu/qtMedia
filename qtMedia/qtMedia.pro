@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT += core gui concurrent
 QT += multimedia
 QT += multimediawidgets
 QT += printsupport
@@ -33,7 +33,13 @@ SOURCES += main.cpp\
     vediodlg.cpp \
     fileeidtdlg.cpp \
     clockwidget.cpp \
-    clockdlg.cpp
+    clockdlg.cpp \
+    imagedlg.cpp \
+    utils/tools.cpp \
+    utils/gaussianblur.cpp \
+    utils/histogram.cpp \
+    utils/medianfilter.cpp \
+    utils/qcustomplot.cpp
 
 HEADERS  += \
     qmyvideowidget.h \
@@ -43,15 +49,21 @@ HEADERS  += \
     vediodlg.h \
     fileeidtdlg.h \
     clockwidget.h \
-    clockdlg.h
+    clockdlg.h \
+    imagedlg.h \
+    utils/tools.h \
+    utils/gaussianblur.h \
+    utils/histogram.h \
+    utils/medianfilter.h \
+    utils/qcustomplot.h
 
 FORMS    += \
     center.ui \
     vediodlg.ui \
     fileeidtdlg.ui \
     drawdlg.ui \
-    clockdlg.ui
+    clockdlg.ui \
+    imagedlg.ui
 
 RESOURCES += \
     res.qrc \
-    res.qrc

@@ -8,6 +8,12 @@ INPUT(
 ./release\fileeidtdlg.o
 ./release\clockwidget.o
 ./release\clockdlg.o
+./release\imagedlg.o
+./release\tools.o
+./release\gaussianblur.o
+./release\histogram.o
+./release\medianfilter.o
+./release\qcustomplot.o
 ./release\qrc_res.o
 ./release\moc_drawdlg.o
 ./release\moc_drawwidget.o
@@ -16,4 +22,7 @@ INPUT(
 ./release\moc_fileeidtdlg.o
 ./release\moc_clockwidget.o
 ./release\moc_clockdlg.o
+./release\moc_imagedlg.o
+./release\moc_medianfilter.o
+./release\moc_qcustomplot.o
 );

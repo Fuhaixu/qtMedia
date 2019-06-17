@@ -4,6 +4,7 @@
 #include"vediodlg.h"
 #include"fileeidtdlg.h"
 #include"clockdlg.h"
+#include"imagedlg.h"
 Center::Center(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Center)
@@ -39,9 +40,16 @@ void Center::on_btnEdit_clicked()
     few.exec();
 }
 
-void Center::on_btnDraw_2_clicked()
+void Center::on_btnClock_clicked()
 {
     this->close();
     ClockDlg d;
+    d.exec();
+}
+
+void Center::on_btnImgProcessing_clicked()
+{
+    this->close();
+    imageDlg d;
     d.exec();
 }

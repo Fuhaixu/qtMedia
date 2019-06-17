@@ -22,7 +22,9 @@ private slots:
 
     void on_btnEdit_clicked();
 
-    void on_btnDraw_2_clicked();
+    void on_btnClock_clicked();
+
+    void on_btnImgProcessing_clicked();
 
 private:
     Ui::Center *ui;

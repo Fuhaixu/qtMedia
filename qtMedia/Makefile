@@ -227,6 +227,7 @@ Makefile: qtMedia.pro D:/software/Qt/qt5.8/5.8/mingw53_32/mkspecs/win32-g++/qmak
 		D:/software/Qt/qt5.8/5.8/mingw53_32/lib/Qt5PrintSupport.prl \
 		D:/software/Qt/qt5.8/5.8/mingw53_32/lib/Qt5Widgets.prl \
 		D:/software/Qt/qt5.8/5.8/mingw53_32/lib/Qt5Gui.prl \
+		D:/software/Qt/qt5.8/5.8/mingw53_32/lib/Qt5Concurrent.prl \
 		D:/software/Qt/qt5.8/5.8/mingw53_32/lib/Qt5Network.prl \
 		D:/software/Qt/qt5.8/5.8/mingw53_32/lib/Qt5Core.prl
 	$(QMAKE) -o Makefile qtMedia.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
@@ -398,6 +399,7 @@ D:/software/Qt/qt5.8/5.8/mingw53_32/lib/Qt5Multimedia.prl:
 D:/software/Qt/qt5.8/5.8/mingw53_32/lib/Qt5PrintSupport.prl:
 D:/software/Qt/qt5.8/5.8/mingw53_32/lib/Qt5Widgets.prl:
 D:/software/Qt/qt5.8/5.8/mingw53_32/lib/Qt5Gui.prl:
+D:/software/Qt/qt5.8/5.8/mingw53_32/lib/Qt5Concurrent.prl:
 D:/software/Qt/qt5.8/5.8/mingw53_32/lib/Qt5Network.prl:
 D:/software/Qt/qt5.8/5.8/mingw53_32/lib/Qt5Core.prl:
 qmake: FORCE

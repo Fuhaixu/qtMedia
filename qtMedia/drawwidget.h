@@ -25,7 +25,6 @@ public:
     void mouseReleaseEvent(QMouseEvent* );
     void paintEvent(QPaintEvent *);
     void resizeEvent(QResizeEvent *);
-//    void floodFill(QPoint p);
 signals:
 
 public slots:
@@ -37,14 +36,12 @@ public slots:
     void undo();
 private:
     QPixmap *pix;
-    QPixmap *undoPix;
     QPoint startPos;
     QPoint endPos;
     int style;
     int weight;
     Shape shape;
     QColor color;//前景色
-    bool clearFlag;
     QStack<QString> pixStack;
     void copySrc();
 };

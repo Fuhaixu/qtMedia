@@ -15,10 +15,10 @@
 #include <QMenuBar>
 #include <QMenu>
 #include <QAction>
-#include<iostream>
+#include <iostream>
 using namespace std;
 #include "qmyvideowidget.h"
-#include"drawdlg.h"
+#include "drawdlg.h"
 namespace Ui {
 class VedioDlg;
 }
@@ -77,9 +77,6 @@ private:
     QString  durationTime;
     QString  positionTime;
     QComboBox *fileToolComboBox;
-    //文字处理、绘图、图像、音频视频
-    enum Opt{Draw,Word,Video};
-    DrawDlg *dw;
 };
 
 #endif // VEDIODLG_H

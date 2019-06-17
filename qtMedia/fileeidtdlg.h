@@ -12,7 +12,7 @@
 #include <QPlainTextEdit>
 #include <QPrinter>
 #include <QPrintDialog>
-#include<QLineEdit>
+#include <QLineEdit>
 namespace Ui {
 class FileEidtDlg;
 }
@@ -40,8 +40,6 @@ private:
     Ui::FileEidtDlg *ui;
     QString m_filePath;
     bool m_isTextChanged;
-    QString undoText;
-    QString redoText;
     QLineEdit *findLineEdit;
     QDialog *findDlg;
     QString showFileDialog(QFileDialog::AcceptMode mode, QString title);

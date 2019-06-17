@@ -11,8 +11,6 @@ void QmyVideoWidget::keyPressEvent(QKeyEvent *event)
         this->resize(621,301);
         this->move(240,50);
         this->show();
-//        event->accept();
-//        QVideoWidget::keyPressEvent(event);
     }
 }
 

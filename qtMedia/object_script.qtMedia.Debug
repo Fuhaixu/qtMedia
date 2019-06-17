@@ -8,6 +8,12 @@ INPUT(
 ./debug\fileeidtdlg.o
 ./debug\clockwidget.o
 ./debug\clockdlg.o
+./debug\imagedlg.o
+./debug\tools.o
+./debug\gaussianblur.o
+./debug\histogram.o
+./debug\medianfilter.o
+./debug\qcustomplot.o
 ./debug\qrc_res.o
 ./debug\moc_drawdlg.o
 ./debug\moc_drawwidget.o
@@ -16,4 +22,7 @@ INPUT(
 ./debug\moc_fileeidtdlg.o
 ./debug\moc_clockwidget.o
 ./debug\moc_clockdlg.o
+./debug\moc_imagedlg.o
+./debug\moc_medianfilter.o
+./debug\moc_qcustomplot.o
 );

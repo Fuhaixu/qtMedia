@@ -11,13 +11,10 @@ DrawWidget::DrawWidget(QWidget *parent) : QWidget(parent)
     setAutoFillBackground(true);    	//对窗体背景色的设置
     setPalette(QPalette(Qt::white));
     pix =new QPixmap(size());           //此QPixmap对象用来准备随时接收绘制的内容
-    undoPix =new QPixmap(pix->width(),pix->height());
     pix->fill(Qt::white);            	//填充背景色为白色
-    undoPix->fill(Qt::white);
     setMinimumSize(600,400);            //设置绘制区窗体的最小尺寸
     this->setShape(Doodle);
     this->setWidth(1);
-    clearFlag=false;
 }
 void DrawWidget::setStyle(int s)
 {
@@ -86,7 +83,7 @@ void DrawWidget::paintEvent(QPaintEvent *)
 
 void DrawWidget::resizeEvent(QResizeEvent *event)
 {
-    if(height()>pix->height()||width()>pix->width())	//(a)
+    if(height()>pix->height()||width()>pix->width())
     {
         QPixmap *newPix = new QPixmap(size());	//创建一个新的QPixmap对象
         newPix->fill(Qt::white);                //填充新QPixmap对象newPix的颜色为白色背景色
@@ -103,7 +100,6 @@ void DrawWidget::clear()
     QPixmap *clearPix =new QPixmap(size());
     clearPix->fill(Qt::white);
     pix = clearPix;
-    clearFlag=true;
     update();
 }
 
@@ -111,17 +107,8 @@ void DrawWidget::setShape(Shape s){
     this->shape=s;
 }
 
-QString numberToStr(int i){
-    QString str="";
-    while(i){
-        str=i%10+'0'+str;
-        i/=10;
-    }
-    return str;
-}
-
 void DrawWidget::copySrc(){
-    QString i=numberToStr(pixStack.size()+1);
+    QString i=QString::number(pixStack.size()+1);
     pix->save("undoStack\\"+i+".png");
     pixStack.push_back("undoStack\\"+i+".png");
 }
